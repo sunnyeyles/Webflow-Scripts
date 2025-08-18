@@ -1,0 +1,28 @@
+/* Font smoothing */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+
+/* Material Symbols basic style */
+.material-icon {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px; /* bigger for testing */
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+/* Hide buttons until ready */
+.buttons {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.buttons-ready .buttons {
+  opacity: 1;
+}
